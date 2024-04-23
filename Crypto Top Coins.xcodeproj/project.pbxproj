@@ -12,6 +12,9 @@
 		BA47FCE82BD7842C008CF557 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCE72BD7842C008CF557 /* Item.swift */; };
 		BA47FCEA2BD7842D008CF557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCE92BD7842D008CF557 /* Assets.xcassets */; };
 		BA47FCEE2BD7842D008CF557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */; };
+		BA47FCF62BD78501008CF557 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = BA47FCF52BD78501008CF557 /* Inject */; };
+		BA47FCF92BD78A08008CF557 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCF82BD78A08008CF557 /* Info.plist */; };
+		BA47FCFB2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BA47FCE92BD7842D008CF557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA47FCEB2BD7842D008CF557 /* Crypto_Top_Coins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_Top_Coins.entitlements; sourceTree = "<group>"; };
 		BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoTopCoinsConfiguration.xcconfig; sourceTree = "<group>"; };
+		BA47FCF82BD78A08008CF557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTopCoinsEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +35,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA47FCF62BD78501008CF557 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0A3CC92BD78DB70077E737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA0A3CCA2BD78DC00077E737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA0A3CCB2BD78DC60077E737 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A3CCD2BD78DD40077E737 /* Service */,
+				BA0A3CCC2BD78DCD0077E737 /* HTTP */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BA0A3CCC2BD78DCD0077E737 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		BA0A3CCD2BD78DD40077E737 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA0A3CCE2BD78DDA0077E737 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA0A3CCF2BD78DE00077E737 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA0A3CD02BD78DE90077E737 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA0A3CD12BD78DF20077E737 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA47FCF82BD78A08008CF557 /* Info.plist */,
+				BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA0A3CD22BD78E130077E737 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BA47FCD72BD7842C008CF557 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +135,17 @@
 		BA47FCE22BD7842C008CF557 /* Crypto Top Coins */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A3CC92BD78DB70077E737 /* Model */,
+				BA0A3CCA2BD78DC00077E737 /* View */,
+				BA0A3CD22BD78E130077E737 /* ViewModel */,
+				BA0A3CCB2BD78DC60077E737 /* Networking */,
+				BA0A3CCE2BD78DDA0077E737 /* Data */,
+				BA0A3CCF2BD78DE00077E737 /* Extensions */,
+				BA0A3CD02BD78DE90077E737 /* Helpers */,
+				BA0A3CD12BD78DF20077E737 /* Resources */,
 				BA47FCE32BD7842C008CF557 /* Crypto_Top_CoinsApp.swift */,
 				BA47FCE52BD7842C008CF557 /* ContentView.swift */,
+				BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */,
 				BA47FCE72BD7842C008CF557 /* Item.swift */,
 				BA47FCE92BD7842D008CF557 /* Assets.xcassets */,
 				BA47FCEB2BD7842D008CF557 /* Crypto_Top_Coins.entitlements */,
@@ -88,6 +178,9 @@
 			dependencies = (
 			);
 			name = "Crypto Top Coins";
+			packageProductDependencies = (
+				BA47FCF52BD78501008CF557 /* Inject */,
+			);
 			productName = "Crypto Top Coins";
 			productReference = BA47FCE02BD7842C008CF557 /* Crypto Top Coins.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +209,9 @@
 				Base,
 			);
 			mainGroup = BA47FCD72BD7842C008CF557;
+			packageReferences = (
+				BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = BA47FCE12BD7842C008CF557 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +228,7 @@
 			files = (
 				BA47FCEE2BD7842D008CF557 /* Preview Assets.xcassets in Resources */,
 				BA47FCEA2BD7842D008CF557 /* Assets.xcassets in Resources */,
+				BA47FCF92BD78A08008CF557 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +242,7 @@
 				BA47FCE62BD7842C008CF557 /* ContentView.swift in Sources */,
 				BA47FCE82BD7842C008CF557 /* Item.swift in Sources */,
 				BA47FCE42BD7842C008CF557 /* Crypto_Top_CoinsApp.swift in Sources */,
+				BA47FCFB2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +391,10 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.turntlabs.Crypto-Top-Coins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -331,6 +433,10 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.turntlabs.Crypto-Top-Coins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -363,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA47FCF52BD78501008CF557 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA47FCD82BD7842C008CF557 /* Project object */;
 }
