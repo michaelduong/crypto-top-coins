@@ -9,15 +9,18 @@ import Foundation
 
 protocol CoinServiceInterface {
     var httpClient: HTTPClient { get }
+    var cacheManager: CacheManagerInterface { get }
     
     func fetchCoins() async throws -> [Coin]
 }
 
 struct CoinService: CoinServiceInterface {
     let httpClient: HTTPClient
+    let cacheManager: CacheManagerInterface
     
-    init(httpClient: HTTPClient) {
+    init(httpClient: HTTPClient, cacheManager: CacheManagerInterface) {
         self.httpClient = httpClient
+        self.cacheManager = cacheManager
     }
     
     func fetchCoins() async throws -> [Coin] {
@@ -27,9 +30,14 @@ struct CoinService: CoinServiceInterface {
         
         do {
             let response: [Coin] = try await httpClient.get(url: url)
+            cacheManager.saveCache(coins: response)
             return response
         } catch {
-            return [Coin]()
+            return fetchCachedCoins()
         }
+    }
+    
+    func fetchCachedCoins() -> [Coin] {
+        return cacheManager.retrieveCache()
     }
 }

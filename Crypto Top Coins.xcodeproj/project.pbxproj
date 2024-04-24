@@ -11,14 +11,16 @@
 		BA0A3CD62BD790890077E737 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CD52BD790890077E737 /* Coin.swift */; };
 		BA0A3CD82BD791150077E737 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CD72BD791150077E737 /* CoinService.swift */; };
 		BA0A3CDA2BD791B90077E737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CD92BD791B90077E737 /* Constants.swift */; };
+		BA0A3CDC2BD7948E0077E737 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CDB2BD7948E0077E737 /* CoinViewModel.swift */; };
+		BA0A3CDF2BD797CA0077E737 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BA0A3CDE2BD797CA0077E737 /* Kingfisher */; };
+		BA0A3CE12BD797FC0077E737 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE02BD797FC0077E737 /* CoinView.swift */; };
+		BA0A3CE32BD798290077E737 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE22BD798290077E737 /* Double+Extension.swift */; };
+		BA0A3CE52BD7986E0077E737 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE42BD7986E0077E737 /* CoinListView.swift */; };
+		BA0A3CE72BD954610077E737 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE62BD954610077E737 /* CacheManager.swift */; };
 		BA47FCE42BD7842C008CF557 /* Crypto_Top_CoinsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCE32BD7842C008CF557 /* Crypto_Top_CoinsApp.swift */; };
-		BA47FCE62BD7842C008CF557 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCE52BD7842C008CF557 /* ContentView.swift */; };
-		BA47FCE82BD7842C008CF557 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCE72BD7842C008CF557 /* Item.swift */; };
 		BA47FCEA2BD7842D008CF557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCE92BD7842D008CF557 /* Assets.xcassets */; };
 		BA47FCEE2BD7842D008CF557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */; };
 		BA47FCF62BD78501008CF557 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = BA47FCF52BD78501008CF557 /* Inject */; };
-		BA47FCF92BD78A08008CF557 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCF82BD78A08008CF557 /* Info.plist */; };
-		BA47FCFB2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +28,17 @@
 		BA0A3CD52BD790890077E737 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		BA0A3CD72BD791150077E737 /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		BA0A3CD92BD791B90077E737 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA0A3CDB2BD7948E0077E737 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		BA0A3CE02BD797FC0077E737 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		BA0A3CE22BD798290077E737 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		BA0A3CE42BD7986E0077E737 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		BA0A3CE62BD954610077E737 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		BA47FCE02BD7842C008CF557 /* Crypto Top Coins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Top Coins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA47FCE32BD7842C008CF557 /* Crypto_Top_CoinsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_Top_CoinsApp.swift; sourceTree = "<group>"; };
-		BA47FCE52BD7842C008CF557 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BA47FCE72BD7842C008CF557 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA47FCE92BD7842D008CF557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA47FCEB2BD7842D008CF557 /* Crypto_Top_Coins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_Top_Coins.entitlements; sourceTree = "<group>"; };
 		BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoTopCoinsConfiguration.xcconfig; sourceTree = "<group>"; };
-		BA47FCF82BD78A08008CF557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTopCoinsEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0A3CDF2BD797CA0077E737 /* Kingfisher in Frameworks */,
 				BA47FCF62BD78501008CF557 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +65,8 @@
 		BA0A3CCA2BD78DC00077E737 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A3CE02BD797FC0077E737 /* CoinView.swift */,
+				BA0A3CE42BD7986E0077E737 /* CoinListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 		BA0A3CCE2BD78DDA0077E737 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A3CE62BD954610077E737 /* CacheManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 		BA0A3CCF2BD78DE00077E737 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A3CE22BD798290077E737 /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -115,7 +123,6 @@
 		BA0A3CD12BD78DF20077E737 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BA47FCF82BD78A08008CF557 /* Info.plist */,
 				BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */,
 			);
 			path = Resources;
@@ -124,6 +131,7 @@
 		BA0A3CD22BD78E130077E737 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A3CDB2BD7948E0077E737 /* CoinViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,9 +164,6 @@
 				BA0A3CD02BD78DE90077E737 /* Helpers */,
 				BA0A3CD12BD78DF20077E737 /* Resources */,
 				BA47FCE32BD7842C008CF557 /* Crypto_Top_CoinsApp.swift */,
-				BA47FCE52BD7842C008CF557 /* ContentView.swift */,
-				BA47FCFA2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift */,
-				BA47FCE72BD7842C008CF557 /* Item.swift */,
 				BA47FCE92BD7842D008CF557 /* Assets.xcassets */,
 				BA47FCEB2BD7842D008CF557 /* Crypto_Top_Coins.entitlements */,
 				BA47FCEC2BD7842D008CF557 /* Preview Content */,
@@ -192,6 +197,7 @@
 			name = "Crypto Top Coins";
 			packageProductDependencies = (
 				BA47FCF52BD78501008CF557 /* Inject */,
+				BA0A3CDE2BD797CA0077E737 /* Kingfisher */,
 			);
 			productName = "Crypto Top Coins";
 			productReference = BA47FCE02BD7842C008CF557 /* Crypto Top Coins.app */;
@@ -223,6 +229,7 @@
 			mainGroup = BA47FCD72BD7842C008CF557;
 			packageReferences = (
 				BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */,
+				BA0A3CDD2BD797CA0077E737 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BA47FCE12BD7842C008CF557 /* Products */;
 			projectDirPath = "";
@@ -240,7 +247,6 @@
 			files = (
 				BA47FCEE2BD7842D008CF557 /* Preview Assets.xcassets in Resources */,
 				BA47FCEA2BD7842D008CF557 /* Assets.xcassets in Resources */,
-				BA47FCF92BD78A08008CF557 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +258,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0A3CD62BD790890077E737 /* Coin.swift in Sources */,
-				BA47FCE62BD7842C008CF557 /* ContentView.swift in Sources */,
 				BA0A3CD42BD7904D0077E737 /* HTTPClient.swift in Sources */,
-				BA47FCE82BD7842C008CF557 /* Item.swift in Sources */,
+				BA0A3CDC2BD7948E0077E737 /* CoinViewModel.swift in Sources */,
+				BA0A3CE52BD7986E0077E737 /* CoinListView.swift in Sources */,
+				BA0A3CE32BD798290077E737 /* Double+Extension.swift in Sources */,
+				BA0A3CE12BD797FC0077E737 /* CoinView.swift in Sources */,
+				BA0A3CE72BD954610077E737 /* CacheManager.swift in Sources */,
 				BA47FCE42BD7842C008CF557 /* Crypto_Top_CoinsApp.swift in Sources */,
 				BA0A3CD82BD791150077E737 /* CoinService.swift in Sources */,
-				BA47FCFB2BD78A5F008CF557 /* CryptoTopCoinsEnvironment.swift in Sources */,
 				BA0A3CDA2BD791B90077E737 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +495,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BA0A3CDD2BD797CA0077E737 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 		BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -498,6 +514,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BA0A3CDE2BD797CA0077E737 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0A3CDD2BD797CA0077E737 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		BA47FCF52BD78501008CF557 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */;
