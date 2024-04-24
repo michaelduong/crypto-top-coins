@@ -18,5 +18,8 @@ enum Constants {
         static let badUrlErrorMessage = "There was an error with the URL/endpoint."
         static let jsonParseErrorMessage = "There was an issue parsing the JSON data properly."
         static let emptyErrorMessage = "The network request returned an empty list/JSON data."
+        
+        static let appTitle = "Crypto Top Coins"
+        static let okButton = "Ok"
     }
 }

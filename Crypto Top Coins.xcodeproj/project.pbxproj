@@ -17,6 +17,7 @@
 		BA0A3CE32BD798290077E737 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE22BD798290077E737 /* Double+Extension.swift */; };
 		BA0A3CE52BD7986E0077E737 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE42BD7986E0077E737 /* CoinListView.swift */; };
 		BA0A3CE72BD954610077E737 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A3CE62BD954610077E737 /* CacheManager.swift */; };
+		BA0A3CEA2BD95E8E0077E737 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BA0A3CE92BD95E8E0077E737 /* ActivityIndicatorView */; };
 		BA47FCE42BD7842C008CF557 /* Crypto_Top_CoinsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47FCE32BD7842C008CF557 /* Crypto_Top_CoinsApp.swift */; };
 		BA47FCEA2BD7842D008CF557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCE92BD7842D008CF557 /* Assets.xcassets */; };
 		BA47FCEE2BD7842D008CF557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0A3CDF2BD797CA0077E737 /* Kingfisher in Frameworks */,
+				BA0A3CEA2BD95E8E0077E737 /* ActivityIndicatorView in Frameworks */,
 				BA47FCF62BD78501008CF557 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +200,7 @@
 			packageProductDependencies = (
 				BA47FCF52BD78501008CF557 /* Inject */,
 				BA0A3CDE2BD797CA0077E737 /* Kingfisher */,
+				BA0A3CE92BD95E8E0077E737 /* ActivityIndicatorView */,
 			);
 			productName = "Crypto Top Coins";
 			productReference = BA47FCE02BD7842C008CF557 /* Crypto Top Coins.app */;
@@ -230,6 +233,7 @@
 			packageReferences = (
 				BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */,
 				BA0A3CDD2BD797CA0077E737 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				BA0A3CE82BD95E8E0077E737 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = BA47FCE12BD7842C008CF557 /* Products */;
 			projectDirPath = "";
@@ -503,6 +507,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		BA0A3CE82BD95E8E0077E737 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 		BA47FCF42BD78501008CF557 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -518,6 +530,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BA0A3CDD2BD797CA0077E737 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		BA0A3CE92BD95E8E0077E737 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0A3CE82BD95E8E0077E737 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
 		};
 		BA47FCF52BD78501008CF557 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
