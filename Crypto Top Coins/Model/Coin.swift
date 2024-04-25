@@ -28,7 +28,6 @@ struct Coin: Codable, Identifiable {
     let atl, atlChangePercentage: Double?
     let atlDate: String?
     let lastUpdated: String?
-    let sparklineIn7D: SparklineIn7D?
     let priceChangePercentage24HInCurrency: Double?
     var coinDetail: CoinDetail?
 }
@@ -48,10 +47,6 @@ extension Coin: Equatable {
     static func == (lhs: Coin, rhs: CoinDetail) -> Bool {
         return lhs.id == rhs.id && lhs.name == rhs.name
     }
-}
-
-struct SparklineIn7D: Codable {
-    let price: [Double]
 }
 
 let jsonDecoder: JSONDecoder = {
