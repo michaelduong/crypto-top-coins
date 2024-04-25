@@ -31,6 +31,10 @@ struct CoinListView: View {
                         CoinView(coin: coin)
                     }
                 }
+                .refreshable {
+                    isLoading = true
+                    fetchCoins()
+                }
                 
                 ActivityIndicatorView(isVisible: $isLoading, type: .rotatingDots(count: 3))
                     .frame(width: 50, height: 50)
@@ -42,10 +46,7 @@ struct CoinListView: View {
             }
             .onAppear {
                 isLoading = true
-                networkTask = Task {
-                    await coinViewModel.fetchCoins()
-                    isLoading = false
-                }
+                fetchCoins()
             }
             .onDisappear {
                 networkTask?.cancel()
@@ -54,5 +55,12 @@ struct CoinListView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
         .enableInjection()
+    }
+    
+    private func fetchCoins() {
+        networkTask = Task {
+            await coinViewModel.fetchCoins()
+            isLoading = false
+        }
     }
 }
