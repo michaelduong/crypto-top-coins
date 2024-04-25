@@ -12,6 +12,8 @@ import Inject
 typealias NetworkTask = Task<Void, Never>
 
 struct CoinListView: View {
+    @EnvironmentObject var httpClient: HTTPClient
+    @EnvironmentObject var cacheManager: CacheManager
     @State var coinViewModel: CoinViewModel
     @State var networkTask: NetworkTask?
     @State private var isLoading = false
@@ -21,7 +23,13 @@ struct CoinListView: View {
         NavigationView {
             ZStack {
                 List(coinViewModel.coins, id: \.id) { coin in
-                    CoinView(coin: coin)
+                    NavigationLink(
+                        destination: CoinDetailView(coin: coin)
+                            .environmentObject(httpClient)
+                            .environmentObject(cacheManager)
+                    ) {
+                        CoinView(coin: coin)
+                    }
                 }
                 
                 ActivityIndicatorView(isVisible: $isLoading, type: .rotatingDots(count: 3))

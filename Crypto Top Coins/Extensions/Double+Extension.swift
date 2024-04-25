@@ -55,6 +55,10 @@ extension Double {
         return String(format: "%.2f", self)
     }
     
+    func asPercentString() -> String {
+        return asNumberString() + "%"
+    }
+    
     func formattedWithAbbreviations() -> String {
         let num = abs(Double(self))
         let sign = (self < 0) ? "-" : ""

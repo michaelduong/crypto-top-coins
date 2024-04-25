@@ -17,6 +17,8 @@ struct Crypto_Top_CoinsApp: App {
         
         WindowGroup {
             CoinListView(coinViewModel: coinViewModel)
+                .environmentObject(httpClient)
+                .environmentObject(cacheManager)
         }
     }
 }

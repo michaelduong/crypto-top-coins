@@ -12,7 +12,6 @@ struct CoinDetail: Codable {
     let blockTimeInMinutes: Int?
     let hashingAlgorithm: String?
     let description: Description?
-    let links: Links?
 }
 
 extension CoinDetail: Hashable {
@@ -30,11 +29,6 @@ extension CoinDetail: Equatable {
     static func == (lhs: Coin, rhs: CoinDetail) -> Bool {
         return lhs.id == rhs.id && lhs.name == rhs.name
     }
-}
-
-struct Links: Codable {
-    let homepage: [String]?
-    let subredditURL: String?
 }
 
 struct Description: Codable {

@@ -12,6 +12,7 @@ protocol CoinDetailServiceInterface {
     var cacheManager: CacheManagerInterface { get }
     
     func fetchCoinDetails() async throws -> CoinDetail?
+    func fetchCachedCoinDetails() -> CoinDetail?
 }
 
 struct CoinDetailService: CoinDetailServiceInterface {
@@ -35,7 +36,11 @@ struct CoinDetailService: CoinDetailServiceInterface {
             cacheManager.updateCache(for: .id(coinId), withDetails: response)
             return response
         } catch {
-            return fetchCachedCoinDetails()
+            if let cachedCoinDetails = fetchCachedCoinDetails() {
+                return cachedCoinDetails
+            } else {
+                throw NetworkError.invalidJSON
+            }
         }
     }
     

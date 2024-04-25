@@ -24,7 +24,7 @@ protocol UserDefaultsInterface {
     func set(_ value: Any?, forKey: String)
 }
 
-final class CacheManager: CacheManagerInterface {
+final class CacheManager: CacheManagerInterface, ObservableObject {
     var cache: Set<Coin> = []
     let userDefaults = UserDefaults.standard
     let jsonEncoder = JSONEncoder()

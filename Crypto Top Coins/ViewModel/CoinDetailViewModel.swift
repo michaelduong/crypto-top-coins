@@ -45,9 +45,7 @@ import SwiftUI
     func fetchCoinDetails() async {
         do {
             let coinDetails = try await api.fetchCoinDetails()
-            
             self.overviewStats = mapCoinDetailsToStats(coinDetail: coinDetails, coin: coin)
-            
             self.coinDescription = coinDetails?.description?.en
         } catch {
             if let networkError = error as? NetworkError {

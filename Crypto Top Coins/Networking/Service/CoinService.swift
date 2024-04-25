@@ -34,7 +34,12 @@ struct CoinService: CoinServiceInterface {
             cacheManager.saveCache(coins: response)
             return response
         } catch {
-            return fetchCachedCoins()
+            let cachedCoins = fetchCachedCoins()
+            if !cachedCoins.isEmpty {
+                return cachedCoins
+            } else {
+                throw NetworkError.invalidJSON
+            }
         }
     }
     
