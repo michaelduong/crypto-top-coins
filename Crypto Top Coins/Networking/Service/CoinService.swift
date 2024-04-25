@@ -12,6 +12,7 @@ protocol CoinServiceInterface {
     var cacheManager: CacheManagerInterface { get }
     
     func fetchCoins() async throws -> [Coin]
+    func fetchCachedCoins() -> [Coin]
 }
 
 struct CoinService: CoinServiceInterface {
@@ -24,7 +25,7 @@ struct CoinService: CoinServiceInterface {
     }
     
     func fetchCoins() async throws -> [Coin] {
-        guard let url = URL(string: Constants.Endpoints.coinGeckoTopCoinURL) else {
+        guard let url = URL(string: Constants.Endpoints.coinGeckoTopCoinEndpoint) else {
             throw NetworkError.badURL
         }
         

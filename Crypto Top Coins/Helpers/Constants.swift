@@ -9,7 +9,14 @@ import Foundation
 
 enum Constants {
     enum Endpoints {
-        static let coinGeckoTopCoinURL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h"
+        static let baseCoinGeckoURL = "https://api.coingecko.com/api/v3/"
+        
+        static let coinGeckoTopCoinEndpoint = "\(baseCoinGeckoURL)coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h"
+        
+        // Function to construct the coin detail URL
+        static func coinGeckoCoinDetailURL(coinId: String) -> String {
+            return "\(baseCoinGeckoURL)coins/\(coinId)?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false"
+        }
     }
     
     enum Strings {
@@ -21,5 +28,9 @@ enum Constants {
         
         static let appTitle = "Crypto Top Coins"
         static let okButton = "Ok"
+    }
+    
+    enum UserDefaultsKeys {
+        static let cache = "cache"
     }
 }

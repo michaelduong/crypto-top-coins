@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum CoinIdentifier {
+    case coin(Coin)
+    case id(String)
+}
+
 struct Coin: Codable, Identifiable {
     let id, symbol, name: String
     let image: String
@@ -25,6 +30,7 @@ struct Coin: Codable, Identifiable {
     let lastUpdated: String?
     let sparklineIn7D: SparklineIn7D?
     let priceChangePercentage24HInCurrency: Double?
+    var coinDetail: CoinDetail?
 }
 
 extension Coin: Hashable {
@@ -36,6 +42,10 @@ extension Coin: Hashable {
 
 extension Coin: Equatable {
     static func == (lhs: Coin, rhs: Coin) -> Bool {
+        return lhs.id == rhs.id && lhs.name == rhs.name
+    }
+    
+    static func == (lhs: Coin, rhs: CoinDetail) -> Bool {
         return lhs.id == rhs.id && lhs.name == rhs.name
     }
 }

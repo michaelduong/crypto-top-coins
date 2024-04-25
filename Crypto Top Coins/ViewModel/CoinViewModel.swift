@@ -33,6 +33,9 @@ import SwiftUI
     
     init(api: CoinServiceInterface) {
         self.api = api
+        
+        coins = api.fetchCachedCoins()
+        sortTopMoverCoins()
     }
     
     func fetchCoins() async {
