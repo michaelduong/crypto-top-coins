@@ -77,7 +77,6 @@
 		BA47FCE92BD7842D008CF557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA47FCEB2BD7842D008CF557 /* Crypto_Top_Coins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_Top_Coins.entitlements; sourceTree = "<group>"; };
 		BA47FCED2BD7842D008CF557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoTopCoinsConfiguration.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				BA0A3CF92BDA38E10077E737 /* coin_response.json */,
-				BA47FCF72BD789B6008CF557 /* CryptoTopCoinsConfiguration.xcconfig */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
